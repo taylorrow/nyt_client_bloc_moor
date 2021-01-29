@@ -13,7 +13,7 @@ class NYTClient {
       {http.Client httpClient,
       this.baseUrl =
           "https://api.nytimes.com/svc/topstories/v2/home.json?api-key=",
-      this.key = 'your_key'})
+      this.key = 'AbbiAsPY0u9qPJAB9GIeR50TOAYZXBdu'})
       : this.httpClient = httpClient ?? http.Client();
 
   Future<SearchResult> fetchData() async {

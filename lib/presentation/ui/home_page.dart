@@ -9,9 +9,7 @@ import 'package:url_launcher/url_launcher.dart';
 class NYTHomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    NYTHomePageBloc _githubSearchBloc =
-        BlocProvider.of<NYTHomePageBloc>(context);
-    _githubSearchBloc.add(LoadNYTMainPage());
+    BlocProvider.of<NYTHomePageBloc>(context).add(LoadNYTMainPage());
     return BlocBuilder<NYTHomePageBloc, NYTLoadHomePageState>(
       bloc: BlocProvider.of<NYTHomePageBloc>(context),
       builder: (BuildContext context, NYTLoadHomePageState state) {
